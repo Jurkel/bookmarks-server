@@ -1,6 +1,21 @@
-let bookmarks=[
-  {id:'1', title:'Tom Sawyer', description:'Not sure what kind of bookmarks I\'m supposed to be making', url:'https://www.google.com', rating:1 },
-  {id:'2', title:'YOLO', description:'Story of all lives except those in the process of reincarnation',  url:'https://www.amazon.com'}
-];
+const uuid = require('uuid/v4')
 
-module.exports=bookmarks;
+const bookmarks = [
+  { id: uuid(),
+    title: 'Thinkful',
+    url: 'https://www.thinkful.com',
+    description: 'Think outside the classroom',
+    rating: 5 },
+  { id: uuid(),
+    title: 'Google',
+    url: 'https://www.google.com',
+    description: 'Where we find everything else',
+    rating: 4 },
+  { id: uuid(),
+    title: 'MDN',
+    url: 'https://developer.mozilla.org',
+    description: 'The only place to find web documentation',
+    rating: 5 },
+]
+
+module.exports = { bookmarks }
